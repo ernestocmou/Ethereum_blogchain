@@ -45,10 +45,11 @@ class TokenListContainer extends Component {
 
     return (
       <div id="token-list">
-        <h1>Tokens</h1>
-        <div className="small-12 medium-8 columns medium-centered">
+        <h1>Top Tokens by Capitalization: </h1>
+        <div className="small-9 medium-6 columns medium-centered">
           { tokenComponents }
         </div>
+        <h16>Powered by ethplorer</h16>
       </div>
     );
   }

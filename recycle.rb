@@ -114,3 +114,8 @@
     <%= f.submit 'Add Comment'%>
   </div>
 <% end %>
+
+===============
+profile pic in nav bar
+
+<li><img id="profile_photo" src="<%= current_user.profile_photo %>"width="200" height="45" /></li>

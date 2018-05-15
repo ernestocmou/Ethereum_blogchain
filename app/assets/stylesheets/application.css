@@ -16,11 +16,71 @@
 
  */
 
+ h1 {
+   color: white;
+ }
+
+ h2 {
+   font-family: 'Courier New';
+   color: white;
+ }
+ .top-bar{
+   background-color: #d0a3ff;
+   font-family: 'Courier New';
+   color: black;
+   width: 200;
+   height: 45;
+ }
+
+ ul li {
+   float: right;
+   float: left;
+   width: 200px;
+   height: 12%;
+   background: #d0a3ff;
+    margin-left: 2px;
+    font-family: 'Courier New';
+    color: black;
+    border-radius: 3%;
+
+
+ }
+
+ .panel{
+   text-align: center;
+   background: #d0a3ff;
+   border-radius: 5%;
+
+ }
+ .panel:hover{
+   background: #00ff38;
+
+
+ }
+
+ ul li a:hover{
+   background: #00ff38;
+ }
+
+ ul li a {
+   color: black;
+ }
+
+
  body {
-    background: lightblue;
-    color: #FBFBFA;
+    background: #3e0074;
+    color: white;
     font-family: 'Courier New';font-size: 22px;
   }
+
+.top-bar-section li:not(.has-form) a:not(.button).devise-button {
+  background: #d0a3ff;
+  font-family: 'Courier New';
+
+}
+.top-bar-section li:not(.has-form) a:not(.button).devise-button:hover{
+  background: #00ff38;
+}
 
 h1 {
   font-family: 'Courier New'
@@ -34,4 +94,46 @@ h3 {
 top-bar-section {
 
   font-family: 'Courier New'
+}
+
+.log-in {
+    background: white;
+}
+
+#token-list .panel {
+  padding: 0
+}
+#token-list .panel a {
+  display: block;
+  padding: 15px 10px;
+  color: black;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: ##fd00ff;
+    background: ##00ff38;
+}
+
+.profile_photo {
+  width: 200;
+  height: 200;
+
+}
+.right {
+  width: 200;
+  height: 455;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.input.button {
+  font-family: 'Courier New'
+
+}
+
+.field {
+  font-family: 'Courier New'
+
+
 }

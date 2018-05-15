@@ -18,22 +18,27 @@
   <nav class="top-bar">
     <ul class="title-area">
       <li class="name">
-        <h1><a href="/">Eth Blogchain</a></h1>
+        <h2><a href="/">ETH-Blogchain</a></h2>
       </li>
     </ul>
 
     <section class="top-bar-section">
+
       <ul class="right">
         <%- if current_user -%>
         <% if current_user.profile_photo %>
-        <li><img id="profile_photo" src="<%= current_user.profile_photo %>" height=66 width=66 /></li>
+        <div>
+        
           <% end %>
-          <li><%= link_to current_user.username, edit_user_registration_path %></li>
 
-          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to current_user.username, edit_user_registration_path, :class => "devise-button" %></li>
+
+          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => "devise-button" %></li>
         <%- else -%>
-          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-          <li><%= link_to 'Log In', new_user_session_path %></li>
+
+
+          <li><%= link_to 'Sign Up', new_user_registration_path, :class => "devise-button" %></li>
+          <li><%= link_to 'Log In', new_user_session_path, :class => "devise-button" %></li>
         <%- end -%>
       </ul>
     </section>
