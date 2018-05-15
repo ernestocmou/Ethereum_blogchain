@@ -110,7 +110,7 @@ top-bar-section {
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: ##fd00ff;
+    
     background: ##00ff38;
 }
 
