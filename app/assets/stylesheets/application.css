@@ -83,12 +83,12 @@
 }
 
 h1 {
-  font-family: 'Courier New'
+  font-family: 'Courier New';
 
 }
 h3 {
   color: darkred;
-  font-family: 'Courier New'
+  font-family: 'Courier New';
 }
 
 top-bar-section {
@@ -101,7 +101,7 @@ top-bar-section {
 }
 
 #token-list .panel {
-  padding: 0
+  padding: 0;
 }
 #token-list .panel a {
   display: block;
@@ -110,30 +110,6 @@ top-bar-section {
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-    
-    background: ##00ff38;
-}
-
-.profile_photo {
-  width: 200;
-  height: 200;
-
-}
-.right {
-  width: 200;
-  height: 455;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-.input.button {
-  font-family: 'Courier New'
-
-}
-
-.field {
-  font-family: 'Courier New'
 
 
 }
