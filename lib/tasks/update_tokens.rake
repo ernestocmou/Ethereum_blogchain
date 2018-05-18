@@ -2,23 +2,23 @@ namespace :tokens do
   desc "TODO"
   task update: :environment do
     puts "hello"
-    # @response = HTTParty.get("https://api.ethplorer.io/getTop?apiKey=freekey&criteria=cap", :headers =>{'Content-Type' => 'application/json'})
-    # @response["tokens"].each do |token|
+    response = HTTParty.get("https://api.ethplorer.io/getTop?apiKey=freekey&criteria=cap", :headers =>{'Content-Type' => 'application/json'})
 
-     # grab all of the information that you want
-     # if Token.find_by(address: token["address"])
-     #   Token.update_attributes(
-     #     name: [:]
-     #   )
-     # end
-     #
-     # Token.find_or_create_by(
-     #   name: token["name"]
-     #   ...
-     # )
-     #
+    # iterate over the response
 
-    
+    response["tokens"].each do |token|
+      # create a Token object for each token in your response
+      Token.create(
+        name:token["name"],
+        symbol:token['symbol'],
+        address:token['address'],
+        price:token['price']['rate'],
+        capitalization:token['price']['marketCapUsd'],
+        totalSupply:token['totalSupply'],
+        availableSupply:token['price']['availableSupply'],
+        description:token['description']
+      )
+
+    end
   end
-
 end
