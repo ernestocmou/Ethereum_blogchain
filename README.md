@@ -21,6 +21,8 @@ Ernesto Camou
 *update tokens database:
 rake tokens:update
 
+ heroku run rake db:migrate
+
 exchange dAPPs:
 
 https://forkdelta.github.io/#!/trade/DAI-ETH
@@ -36,3 +38,6 @@ https://www.bancor.network/discover
 https://0xproject.com/portal
 
 https://market.decentraland.org/marketplace
+
+herokuapp link:
+https://still-badlands-77284.herokuapp.com/
